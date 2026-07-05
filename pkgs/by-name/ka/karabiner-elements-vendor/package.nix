@@ -10,14 +10,14 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "karabiner-elements-vendor";
-  version = "16.0.0";
+  version = "16.1.0";
 
   src = fetchFromGitHub {
     owner = "pqrs-org";
     repo = "Karabiner-Elements";
     tag = "v${finalAttrs.version}";
     fetchSubmodules = true;
-    hash = "sha256-TFSfl28VunnOo2/l7SZuat4lAUuVsDiTzDAovD/+3O4=";
+    hash = "sha256-gS4QFn9EDLplvPbvRQQqJqfx/6gdP6Yyvd2T4knmeac=";
   };
 
   nativeBuildInputs = [
@@ -60,7 +60,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   outputHashMode = "recursive";
   outputHashAlgo = "sha256";
-  outputHash = "sha256-Ag6JU9uRWBeBizMiJjHXcjnBdpvt+K7cZ2YojQjOX6I=";
+  outputHash = "sha256-htSZo1I18Str0YSP8Np0EIXW7Jv6HMdIlhGDUzj7rmQ=";
 
   passthru.updateScript = nix-update-script { };
 
